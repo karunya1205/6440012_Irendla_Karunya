@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <form id="regForm">
+    <input name="name" placeholder="Name" required>
+    <input name="email" type="email" required>
+    <select name="event">
+      <option>Yoga</option>
+    </select>
+    <button type="submit">Register</button>
+    <div id="message"></div>
+  </form>
+
+  <script>
+    document.getElementById("regForm").onsubmit = function(e) {
+      e.preventDefault();
+      const name = e.target.name.value;
+      if (!name) {
+        document.getElementById("message").textContent = "Name required";
+        return;
+      }
+      document.getElementById("message").textContent = "Registered!";
+    };
+  </script>
+</body>
+</html>

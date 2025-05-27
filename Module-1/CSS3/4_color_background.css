@@ -1,0 +1,9 @@
+body {
+  background: url('background.jpg') no-repeat center center fixed;
+  background-color: #e0e0e0;
+}
+
+h2 {
+  background: linear-gradient(to right, #ff6600, #ffcc00);
+  color: white;
+}

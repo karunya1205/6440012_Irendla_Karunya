@@ -1,0 +1,15 @@
+@media screen and (max-width: 768px) {
+  nav a {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  body {
+    font-size: 14px;
+  }
+}

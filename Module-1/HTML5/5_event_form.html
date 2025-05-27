@@ -1,0 +1,30 @@
+<style>
+  form {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 300px;
+  }
+</style>
+
+<form onsubmit="showConfirmation(); return false;">
+  <label>Name: <input type="text" name="name" required placeholder="Your name" autofocus></label><br>
+  <label>Email: <input type="email" name="email" required placeholder="example@mail.com"></label><br>
+  <label>Date: <input type="date" name="date" required></label><br>
+  <label>Event Type:
+    <select name="eventType">
+      <option value="music">Music</option>
+      <option value="sports">Sports</option>
+    </select>
+  </label><br>
+  <label>Message:<br>
+    <textarea name="message" placeholder="Your message"></textarea>
+  </label><br>
+  <button type="submit">Register</button>
+  <output id="confirmation"></output>
+</form>
+
+<script>
+  function showConfirmation() {
+    document.getElementById("confirmation").textContent = "Registration successful!";
+  }
+</script>

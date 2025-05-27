@@ -1,0 +1,14 @@
+<video id="promoVideo" controls oncanplay="videoReady()">
+  <source src="C:\Users\karun\OneDrive\Desktop\Cognizant nature 4.0\Module-1\HTML5\promo.mp4"type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<script>
+  function videoReady() {
+    alert("Video ready to play");
+  }
+
+  window.onbeforeunload = function() {
+    return "Are you sure you want to leave? Your form may be unfinished.";
+  };
+</script>

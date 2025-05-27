@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <div id="eventsContainer"></div>
+
+  <script>
+    const events = [{ name: "Cooking Class" }, { name: "Coding Bootcamp" }];
+    const container = document.getElementById("eventsContainer");
+
+    events.forEach(e => {
+      const card = document.createElement("div");
+      card.textContent = e.name;
+      container.appendChild(card);
+    });
+  </script>
+</body>
+</html>
